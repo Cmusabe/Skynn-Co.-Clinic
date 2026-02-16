@@ -15,8 +15,8 @@ app.use(express.static(root, { index: false, extensions: ['html'] }));
 
 // Rewrite /tarieven -> tarieven.html, /contact -> contact.html, etc.
 app.get('*', (req, res, next) => {
-  const urlPath = req.path === '/' ? '/index' : req.path;
-  const htmlPath = path.join(root, urlPath + '.html');
+  const base = req.path === '/' ? 'index' : req.path.slice(1);
+  const htmlPath = path.join(root, base + '.html');
   if (fs.existsSync(htmlPath))
     return res.sendFile(htmlPath);
   next();

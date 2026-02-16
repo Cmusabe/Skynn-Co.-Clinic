@@ -35,7 +35,12 @@ npm start
 
 ## 3. Git & GitHub
 
+**Eerst op GitHub:** maak een nieuw repository aan op https://github.com/new (bijv. `Skynn-Co`), **zonder** README/license/gitignore (lege repo).
+
+Daarna lokaal:
+
 ```bash
+cd /pad/naar/beautysalon
 git init
 git add .
 git commit -m "Production ready: static server, Railway config, .gitignore"
@@ -44,9 +49,16 @@ git remote add origin https://github.com/mcmusabe/Skynn-Co.git
 git push -u origin main
 ```
 
+Als je SSH gebruikt:
+```bash
+git remote add origin git@github.com:mcmusabe/Skynn-Co.git
+git push -u origin main
+```
+
 Als de repo al bestond en niet leeg is:
 ```bash
 git pull origin main --rebase
+# of: git pull origin main --allow-unrelated-histories
 git push -u origin main
 ```
 

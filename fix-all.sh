@@ -15,12 +15,13 @@ echo "1️⃣  Railway login checken..."
 if railway whoami &>/dev/null; then
     echo "   ✅ Ingelogd als: $(railway whoami)"
 else
-    echo "   ⚠️  Niet ingelogd. Start browser login..."
-    railway login
-    if ! railway whoami &>/dev/null; then
-        echo "   ❌ Login mislukt. Probeer handmatig: railway login"
-        exit 1
-    fi
+    echo "   ❌ Niet ingelogd op Railway"
+    echo ""
+    echo "   👉 Run eerst handmatig:"
+    echo "      railway login"
+    echo ""
+    echo "   Daarna run dit script opnieuw: ./fix-all.sh"
+    exit 1
 fi
 
 # 2. Check project link

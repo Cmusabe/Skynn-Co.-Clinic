@@ -561,10 +561,8 @@ h4 { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 500; }
     border-radius: var(--radius);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-    transform: translateZ(0);
 }
-.service-card:hover { transform: translateY(-4px) translateZ(0); box-shadow: var(--shadow); }
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .service-image img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -813,8 +811,6 @@ button:focus-visible,
     border-radius: 14px;
     padding: 20px 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-    will-change: transform;
-    transform: translateZ(0);
 }
 
 .review-quote {
@@ -866,12 +862,10 @@ button:focus-visible,
     border-radius: var(--radius);
     padding: 28px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-    transform: translateZ(0);
 }
 .treatment-detail.alt-bg .treatment-card { background: var(--bg-main); }
 .treatment-card:hover {
-    transform: translateY(-3px) translateZ(0);
+    transform: translateY(-3px);
     box-shadow: var(--shadow);
 }
 .treatment-card h4 { margin-bottom: 6px; color: var(--text-dark); }
@@ -3387,8 +3381,6 @@ h2 {
     border-radius: 16px;
     padding: 20px 20px;
     box-shadow: 0 10px 24px rgba(31, 22, 18, 0.06);
-    will-change: transform;
-    transform: translateZ(0);
 }
 
 .home-proof-label {

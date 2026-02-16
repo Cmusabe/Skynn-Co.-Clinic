@@ -198,8 +198,34 @@
         if (window.scrollY > 60) navbar.classList.add('scrolled');
     }
 
+    // ===== LAZY LOAD VIDEOS (performance: load only when in viewport) =====
+    function initLazyVideos() {
+        var videos = document.querySelectorAll('video.lazy-video source[data-src]');
+        if (!videos.length) return;
+
+        var observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    var source = entry.target;
+                    var video = source.closest('video');
+                    if (!video || source.src) return;
+                    source.src = source.dataset.src || '';
+                    if (source.dataset.type) source.type = source.dataset.type;
+                    video.load();
+                    video.play().catch(function () {});
+                    observer.unobserve(source);
+                });
+            },
+            { rootMargin: '100px', threshold: 0.01 }
+        );
+
+        videos.forEach(function (s) { observer.observe(s); });
+    }
+
     // ===== INIT ALL =====
     function init() {
+        initLazyVideos();
         initScrollReveal();
         initCounterAnimation();
         initFloatingCTA();

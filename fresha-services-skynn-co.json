@@ -1,0 +1,660 @@
+{
+  "categories": [
+    {
+      "id": "popular",
+      "label": "Populaire diensten"
+    },
+    {
+      "id": "fat-freeze",
+      "label": "Fat Freeze"
+    },
+    {
+      "id": "hair-loss-treatment",
+      "label": "Hair Loss Treatment"
+    },
+    {
+      "id": "consultation",
+      "label": "Consultation"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "label": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!"
+    },
+    {
+      "id": "laser-hair-removal",
+      "label": "Laser Hair Removal"
+    },
+    {
+      "id": "skin-treatments",
+      "label": "Skin Treatments"
+    },
+    {
+      "id": "teeth-whitening",
+      "label": "Teeth Whitening"
+    }
+  ],
+  "services": [
+    {
+      "id": "popular-sv-22396654",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Brazilian + Legs + Armpits",
+      "duration": "1 uur, 20 min",
+      "price": "€ 62,50"
+    },
+    {
+      "id": "popular-sv-22396758",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Facial Complete",
+      "duration": "35 min",
+      "price": "€ 25"
+    },
+    {
+      "id": "popular-sv-22396740",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Brazilian + Armpits",
+      "duration": "55 min",
+      "price": "€ 37,50"
+    },
+    {
+      "id": "popular-sv-22396641",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Full Body (Women)",
+      "duration": "2 uur, 5 min",
+      "price": "€ 95"
+    },
+    {
+      "id": "popular-sv-20987458",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Custom Package",
+      "duration": "1 uur",
+      "price": "vanaf € 40"
+    },
+    {
+      "id": "popular-sv-22396767",
+      "category": "popular",
+      "section": "Populaire diensten",
+      "name": "Laser Hair Removal: Upper Lips",
+      "duration": "25 min",
+      "price": "€ 7,50"
+    },
+    {
+      "id": "fat-freeze-sv-24025933",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Skin Tightening + Fat Burning",
+      "duration": "1 uur",
+      "price": "€ 149"
+    },
+    {
+      "id": "fat-freeze-sv-23981033",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Cryolipolysis - Package: 3 sessions (2 zones)",
+      "duration": "1 uur",
+      "price": "€ 450"
+    },
+    {
+      "id": "fat-freeze-sv-23981020",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Cryolipolysis - Package: 3 sessions (1 zone)",
+      "duration": "1 uur",
+      "price": "€ 250"
+    },
+    {
+      "id": "fat-freeze-sv-23980985",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Cryolipolysis - Onderkin",
+      "duration": "50 min",
+      "price": "€ 89"
+    },
+    {
+      "id": "fat-freeze-sv-23980968",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Cryolipolysis - 2 Zones (2 cryo handles)",
+      "duration": "1 uur",
+      "price": "€ 179"
+    },
+    {
+      "id": "fat-freeze-sv-23980944",
+      "category": "fat-freeze",
+      "section": "Fat Freeze",
+      "name": "Cryolipolysis - 1 Zone (1 cryo handle)",
+      "duration": "1 uur",
+      "price": "€ 99"
+    },
+    {
+      "id": "hair-loss-treatment-sv-22738223",
+      "category": "hair-loss-treatment",
+      "section": "Hair Loss Treatment",
+      "name": "Free Consultation - Meso Hair Therapy",
+      "duration": "25 min",
+      "price": "gratis"
+    },
+    {
+      "id": "hair-loss-treatment-sv-22723850",
+      "category": "hair-loss-treatment",
+      "section": "Hair Loss Treatment",
+      "name": "Meso Hair Therapy",
+      "duration": "50 min",
+      "price": "vanaf € 120"
+    },
+    {
+      "id": "consultation-sv-22548784",
+      "category": "consultation",
+      "section": "Consultation",
+      "name": "Free Constultation",
+      "duration": "30 min",
+      "price": "gratis"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-23351680",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Arms (half)",
+      "duration": "25 min",
+      "price": "€ 25"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-23351666",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Shoulders",
+      "duration": "25 min",
+      "price": "€ 27,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22988114",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Face Complete: Dermaplaning + Laser Hair Removal",
+      "duration": "40 min",
+      "price": "€ 27,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396836",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Complete (Men)",
+      "duration": "2 uur, 20 min",
+      "price": "€ 130"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396821",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Stomach + Chest",
+      "duration": "1 uur",
+      "price": "€ 35"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396816",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Back",
+      "duration": "1 uur",
+      "price": "€ 35"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396802",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Buttocks",
+      "duration": "45 min",
+      "price": "€ 27,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396794",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Full Arms",
+      "duration": "45 min",
+      "price": "€ 30"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396786",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Brazilian",
+      "duration": "45 min",
+      "price": "€ 32,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396778",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Chin",
+      "duration": "25 min",
+      "price": "€ 7,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396767",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Upper Lips",
+      "duration": "25 min",
+      "price": "€ 7,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396758",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Facial Complete",
+      "duration": "35 min",
+      "price": "€ 25"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396749",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Legs Complete",
+      "duration": "55 min",
+      "price": "€ 40"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396740",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Brazilian + Armpits",
+      "duration": "55 min",
+      "price": "€ 37,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396718",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Brazilian + Armpits + Upper-lips",
+      "duration": "1 uur",
+      "price": "€ 45"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396694",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Brazilian + Legs",
+      "duration": "1 uur, 20 min",
+      "price": "€ 55"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396654",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Brazilian + Legs + Armpits",
+      "duration": "1 uur, 20 min",
+      "price": "€ 62,50"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396641",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Full Body (Women)",
+      "duration": "2 uur, 5 min",
+      "price": "€ 95"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396624",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal Complete: Body & Face (Women)",
+      "duration": "2 uur, 20 min",
+      "price": "€ 100"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396579",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Armpits",
+      "duration": "45 min",
+      "price": "€ 15"
+    },
+    {
+      "id": "limited-time-offer-50-off-your-first-laser-hair-removal-session-sv-22396566",
+      "category": "limited-time-offer-50-off-your-first-laser-hair-removal-session",
+      "section": "Limited-Time Offer: 50% Off Your First Laser Hair Removal Session!",
+      "name": "Laser Hair Removal: Beard-line",
+      "duration": "30 min",
+      "price": "€ 12,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-23794481",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Neck/ Hairline",
+      "duration": "25 min",
+      "price": "€ 44"
+    },
+    {
+      "id": "laser-hair-removal-sv-23531369",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Bikini",
+      "duration": "25 min",
+      "price": "€ 50"
+    },
+    {
+      "id": "laser-hair-removal-sv-23351697",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Arms (half)",
+      "duration": "1 uur",
+      "price": "€ 50"
+    },
+    {
+      "id": "laser-hair-removal-sv-23351662",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Shoulders",
+      "duration": "25 min",
+      "price": "€ 55"
+    },
+    {
+      "id": "laser-hair-removal-sv-23215980",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Legs (half)",
+      "duration": "1 uur",
+      "price": "€ 50"
+    },
+    {
+      "id": "laser-hair-removal-sv-23174760",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian + Hele Gezicht",
+      "duration": "45 min",
+      "price": "€ 80"
+    },
+    {
+      "id": "laser-hair-removal-sv-22988142",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Face Complete: Dermaplaning + Laser Hair Removal",
+      "duration": "40 min",
+      "price": "€ 55"
+    },
+    {
+      "id": "laser-hair-removal-sv-22396889",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Complete (Men)",
+      "duration": "2 uur, 20 min",
+      "price": "vanaf € 130"
+    },
+    {
+      "id": "laser-hair-removal-sv-22396882",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Stomach + Chest",
+      "duration": "1 uur",
+      "price": "vanaf € 35"
+    },
+    {
+      "id": "laser-hair-removal-sv-22396863",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Back",
+      "duration": "1 uur",
+      "price": "vanaf € 35"
+    },
+    {
+      "id": "laser-hair-removal-sv-22396852",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Buttocks",
+      "duration": "45 min",
+      "price": "vanaf € 27,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-22270742",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Beard-line",
+      "duration": "30 min",
+      "price": "vanaf € 12,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-22270591",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Armpits",
+      "duration": "35 min",
+      "price": "vanaf € 15"
+    },
+    {
+      "id": "laser-hair-removal-sv-22252901",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal Complete: Body + Face",
+      "duration": "1 uur, 50 min",
+      "price": "vanaf € 100"
+    },
+    {
+      "id": "laser-hair-removal-sv-22252877",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Full Body",
+      "duration": "1 uur, 40 min",
+      "price": "vanaf € 95"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987509",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian + Legs + Armpits",
+      "duration": "1 uur, 15 min",
+      "price": "vanaf € 62,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987458",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Custom Package",
+      "duration": "1 uur",
+      "price": "vanaf € 40"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987441",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian + Legs",
+      "duration": "1 uur, 15 min",
+      "price": "vanaf € 55"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987410",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian + Armpits + Upper-lip",
+      "duration": "1 uur",
+      "price": "vanaf € 45"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987402",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian + Armpits",
+      "duration": "55 min",
+      "price": "vanaf € 37,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987366",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Legs Complete",
+      "duration": "55 min",
+      "price": "vanaf € 40"
+    },
+    {
+      "id": "laser-hair-removal-sv-20987305",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Facial Complete",
+      "duration": "30 min",
+      "price": "vanaf € 25"
+    },
+    {
+      "id": "laser-hair-removal-sv-20946541",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Upper Lips",
+      "duration": "25 min",
+      "price": "vanaf € 7,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-20946540",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Chin",
+      "duration": "30 min",
+      "price": "vanaf € 7,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-20946539",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Brazilian",
+      "duration": "45 min",
+      "price": "vanaf € 32,50"
+    },
+    {
+      "id": "laser-hair-removal-sv-20946538",
+      "category": "laser-hair-removal",
+      "section": "Laser Hair Removal",
+      "name": "Laser Hair Removal: Full Arms",
+      "duration": "45 min",
+      "price": "vanaf € 30"
+    },
+    {
+      "id": "skin-treatments-sv-23647677",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Hydra-Facial + LED Light Therapy",
+      "duration": "40 min - 50 min",
+      "price": "vanaf € 69"
+    },
+    {
+      "id": "skin-treatments-sv-20987381",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Tattoo Removal",
+      "duration": "20 min",
+      "price": "vanaf € 40"
+    },
+    {
+      "id": "skin-treatments-sv-20987355",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Chemical Peel",
+      "duration": "45 min",
+      "price": "€ 95"
+    },
+    {
+      "id": "skin-treatments-sv-20987343",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Microneedling (Zalm DNA)",
+      "duration": "1 uur, 35 min",
+      "price": "€ 125"
+    },
+    {
+      "id": "skin-treatments-sv-20987325",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Dieptereiniging (inclusief LED Lichttherapie Masker)",
+      "duration": "1 uur, 15 min",
+      "price": "€ 70"
+    },
+    {
+      "id": "skin-treatments-sv-20987316",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Dieptereiniging",
+      "duration": "1 uur, 5 min",
+      "price": "€ 50"
+    },
+    {
+      "id": "skin-treatments-sv-20946692",
+      "category": "skin-treatments",
+      "section": "Skin Treatments",
+      "name": "Carbon Laser Peel",
+      "duration": "1 uur, 15 min",
+      "price": "vanaf € 87,50"
+    },
+    {
+      "id": "teeth-whitening-sv-22006636",
+      "category": "teeth-whitening",
+      "section": "Teeth Whitening",
+      "name": "Teeth Whitening - 5 sessions",
+      "duration": "2 uur, 5 min",
+      "price": "€ 150"
+    },
+    {
+      "id": "teeth-whitening-sv-22006624",
+      "category": "teeth-whitening",
+      "section": "Teeth Whitening",
+      "name": "Teeth Whitening - 3 sessions",
+      "duration": "1 uur, 25 min",
+      "price": "€ 110"
+    },
+    {
+      "id": "teeth-whitening-sv-22006592",
+      "category": "teeth-whitening",
+      "section": "Teeth Whitening",
+      "name": "Teeth Whitening - 1 session",
+      "duration": "40 min",
+      "price": "€ 45"
+    }
+  ],
+  "settings": {
+    "staffName": "Wenifer",
+    "staffStatus": "Beschikbaar volgens openingstijden",
+    "firstAvailabilityText": "vandaag",
+    "availability": {
+      "weeklyAvailability": {
+        "0": {
+          "enabled": false,
+          "start": "10:00",
+          "end": "17:00"
+        },
+        "1": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "19:00"
+        },
+        "2": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "19:00"
+        },
+        "3": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "19:00"
+        },
+        "4": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "19:00"
+        },
+        "5": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "19:00"
+        },
+        "6": {
+          "enabled": true,
+          "start": "10:00",
+          "end": "17:00"
+        }
+      },
+      "slotIntervalMinutes": 30,
+      "blockedDates": []
+    }
+  }
+}

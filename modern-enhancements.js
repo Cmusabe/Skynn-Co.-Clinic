@@ -200,27 +200,30 @@
 
     // ===== LAZY LOAD VIDEOS (performance: load only when in viewport) =====
     function initLazyVideos() {
-        var videos = document.querySelectorAll('video.lazy-video source[data-src]');
+        var videos = document.querySelectorAll('video.lazy-video');
         if (!videos.length) return;
 
         var observer = new IntersectionObserver(
             function (entries) {
                 entries.forEach(function (entry) {
                     if (!entry.isIntersecting) return;
-                    var source = entry.target;
-                    var video = source.closest('video');
-                    if (!video || source.src) return;
-                    source.src = source.dataset.src || '';
-                    if (source.dataset.type) source.type = source.dataset.type;
+                    var video = entry.target;
+                    var sources = video.querySelectorAll('source[data-src]');
+                    if (!sources.length) return;
+                    sources.forEach(function (source) {
+                        if (source.src) return;
+                        source.src = source.dataset.src || '';
+                        if (source.dataset.type) source.type = source.dataset.type;
+                    });
                     video.load();
                     video.play().catch(function () {});
-                    observer.unobserve(source);
+                    observer.unobserve(video);
                 });
             },
             { rootMargin: '100px', threshold: 0.01 }
         );
 
-        videos.forEach(function (s) { observer.observe(s); });
+        videos.forEach(function (v) { observer.observe(v); });
     }
 
     // ===== INIT ALL =====

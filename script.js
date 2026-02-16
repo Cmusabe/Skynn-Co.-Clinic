@@ -8,7 +8,7 @@ const LEGACY_ADMIN_PIN_KEY = 'mizense_admin_pin_v1';
 const SUPABASE_CONFIG_ROW_KEY = 'booking_config';
 const SUPABASE_CONFIG_TABLE = 'site_config';
 const USE_EXTERNAL_BOOKING = true;
-const ONLINE_BOOKING_URL = '/boek/';
+const ONLINE_BOOKING_URL = 'https://www.fresha.com/a/skynn-co-clinic-apeldoorn-watermanstraat-98-fesz8mta/booking?menu=true&offerItems=sv%3A20946692&pId=1480228&dppub=true&utm_content=link_in_bio&utm_medium=social&utm_source=ig&employeeId=3499647&cartId=9ce8c067-8b47-4aea-92dc-3d15fb427db7';
 const CATEGORY_PAGE_ROUTE_MAP = {
     'skin-treatments': '/huidverbetering/'
 };

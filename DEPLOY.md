@@ -45,13 +45,13 @@ git init
 git add .
 git commit -m "Production ready: static server, Railway config, .gitignore"
 git branch -M main
-git remote add origin https://github.com/mcmusabe/Skynn-Co.git
+git remote add origin git@github.com:Cmusabe/Skynn-Co.-Clinic.git
 git push -u origin main
 ```
 
-Als je SSH gebruikt:
+Als je SSH gebruikt (zoals nu):
 ```bash
-git remote add origin git@github.com:mcmusabe/Skynn-Co.git
+git remote add origin git@github.com:Cmusabe/Skynn-Co.-Clinic.git
 git push -u origin main
 ```
 
@@ -70,7 +70,7 @@ git push -u origin main
 
 1. Ga naar https://railway.app en log in.
 2. **New Project** → **Deploy from GitHub repo**.
-3. Kies **mcmusabe/Skynn-Co** (en autoriseer Railway als dat gevraagd wordt).
+3. Kies **Cmusabe/Skynn-Co.-Clinic** (en autoriseer Railway als dat gevraagd wordt).
 4. Railway detecteert Node + `npm start`; deploy start automatisch.
 5. **Settings** → **Generate Domain** om een URL te krijgen.
 
@@ -83,6 +83,13 @@ railway init          # kies bestaand project of maak nieuw
 railway link          # koppel aan project als dat nog niet is gedaan
 railway up            # deploy huidige map
 railway domain        # genereer een domein
+```
+
+**Of via Railway dashboard:**
+1. Ga naar https://railway.app → **New Project** → **Deploy from GitHub repo**
+2. Kies **Cmusabe/Skynn-Co.-Clinic**
+3. Railway detecteert automatisch Node + `npm start`
+4. **Settings** → **Generate Domain** voor een URL
 ```
 
 ---

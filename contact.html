@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Contact - Skynn & Co. Clinic</title>
     <meta name="description" content="Neem contact op met Skynn & Co. Clinic in Apeldoorn voor huidbehandelingen, laserontharing en persoonlijk advies.">
+    <meta name="theme-color" content="#b54f3f">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beautysalon-gamma.vercel.app/contact">
+    <meta property="og:title" content="Contact - Skynn & Co. Clinic">
+    <meta property="og:description" content="Neem contact op met Skynn & Co. Clinic in Apeldoorn voor huidbehandelingen, laserontharing en persoonlijk advies.">
+    <meta property="og:image" content="https://beautysalon-gamma.vercel.app/photos/IMG_5342.jpeg">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://beautysalon-gamma.vercel.app/contact">
+    <meta name="twitter:title" content="Contact - Skynn & Co. Clinic">
+    <meta name="twitter:description" content="Neem contact op met Skynn & Co. Clinic in Apeldoorn voor huidbehandelingen, laserontharing en persoonlijk advies.">
+    <meta name="twitter:image" content="https://beautysalon-gamma.vercel.app/photos/IMG_5342.jpeg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://beautysalon-gamma.vercel.app/contact">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css?v=12">
 </head>
 <body class="page-contact">
+    <!-- Grain texture overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <a href="#main" class="skip-link">Doorgaan naar inhoud</a>
     <nav class="navbar" id="navbar">
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-main">Skynn & Co.</span>
-                <span class="logo-sub">Clinic</span>
+                <img src="/logo/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo.png" alt="Skynn & Co. Clinic" class="logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -30,16 +59,10 @@
                     <ul class="dropdown-menu" data-dynamic-menu="treatments">
                         <li><a href="/tarieven#tab-popular">Populaire diensten</a></li>
                         <li><a href="/tarieven#tab-laser-hair-removal">Laserontharing</a></li>
+                        <li><a href="/tarieven#tab-fat-freeze">Fat Freeze</a></li>
+                        <li><a href="/tarieven#tab-hair-loss-treatment">Haarverlies behandeling</a></li>
                         <li><a href="/huidverbetering">Huidbehandelingen</a></li>
                         <li><a href="/tarieven#tab-teeth-whitening">Tanden bleken</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown nav-dropdown-pmu">
-                    <a href="/contact" class="dropdown-toggle" data-dynamic-link="pmu" aria-expanded="false">
-                        Permanente make-up <span class="nav-caret" aria-hidden="true">⌄</span>
-                    </a>
-                    <ul class="dropdown-menu" data-dynamic-menu="pmu">
-                        <li><a href="/contact">Op aanvraag</a></li>
                     </ul>
                 </li>
                 <li><a href="/tarieven">Tarieven</a></li>
@@ -221,9 +244,13 @@
 
     <a href="https://www.fresha.com/a/skynn-co-clinic-apeldoorn-watermanstraat-98-fesz8mta/booking?menu=true&amp;offerItems=sv%3A20946692&amp;pId=1480228&amp;dppub=true&amp;utm_content=link_in_bio&amp;utm_medium=social&amp;utm_source=ig&amp;employeeId=3499647&amp;cartId=9ce8c067-8b47-4aea-92dc-3d15fb427db7" target="_blank" rel="noopener noreferrer" class="floating-cta open-booking"><span class="floating-cta-logo">S<span>tw</span></span><span class="floating-cta-divider"></span><span class="floating-cta-text">Maak afspraak</span></a>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="/supabase-config.js"></script>
-    <script src="/script.js"></script>
-    <script src="/modern-enhancements.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="/supabase-config.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="/modern-enhancements.js?v=2" defer></script>
+    <script src="/premium-effects.js?v=2" defer></script>
+    <script src="/ultra-effects.js?v=3" defer></script>
+    <script src="/world-class.js?v=6" defer></script>
 </body>
 </html>

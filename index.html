@@ -4,21 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Skynn & Co. Clinic - Professionele huidzorg met zichtbaar resultaat</title>
-    <meta name="description" content="Skynn & Co. Clinic in Apeldoorn: professionele huidzorg, laserontharing en facials met zichtbaar resultaat en een warm welkom.">
+    <meta name="description" content="Skynn & Co. Clinic in Apeldoorn: professionele huidzorg, laserontharing, huidbehandelingen en fat freeze met zichtbaar resultaat.">
+    <meta name="theme-color" content="#b54f3f">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beautysalon-gamma.vercel.app/">
+    <meta property="og:title" content="Skynn & Co. Clinic - Professionele huidzorg met zichtbaar resultaat">
+    <meta property="og:description" content="Skynn & Co. Clinic in Apeldoorn: professionele huidzorg, laserontharing, huidbehandelingen en fat freeze met zichtbaar resultaat.">
+    <meta property="og:image" content="https://beautysalon-gamma.vercel.app/photos/IMG_5342.jpeg">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://beautysalon-gamma.vercel.app/">
+    <meta name="twitter:title" content="Skynn & Co. Clinic - Professionele huidzorg met zichtbaar resultaat">
+    <meta name="twitter:description" content="Skynn & Co. Clinic in Apeldoorn: professionele huidzorg, laserontharing, huidbehandelingen en fat freeze met zichtbaar resultaat.">
+    <meta name="twitter:image" content="https://beautysalon-gamma.vercel.app/photos/IMG_5342.jpeg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://beautysalon-gamma.vercel.app/">
+
+    <!-- Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Skynn & Co. Clinic",
+        "image": "https://beautysalon-gamma.vercel.app/photos/IMG_5342.jpeg",
+        "url": "https://beautysalon-gamma.vercel.app",
+        "telephone": "+31617347800",
+        "email": "info@skynnco.nl",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Watermanstraat 98",
+            "addressLocality": "Apeldoorn",
+            "postalCode": "7324 AK",
+            "addressCountry": "NL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 52.2112,
+            "longitude": 5.9699
+        },
+        "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00"}
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "5013",
+            "bestRating": "5"
+        },
+        "priceRange": "$$",
+        "description": "Professionele huidzorg, laserontharing, fat freeze en huidbehandelingen in Apeldoorn. Meer dan 5.000 positieve reviews.",
+        "sameAs": [
+            "https://www.instagram.com/skynnandco.nl/",
+            "https://www.tiktok.com/@skynnandco.nl"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Behandelingen",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laserontharing"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fat Freeze (Cryolipolyse)"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hydra-Facial"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Carbon Laser Peel"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tanden Bleken"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Meso Haartherapie"}}
+            ]
+        }
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="/photos/IMG_5342.jpeg" fetchpriority="high">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css?v=13">
 </head>
 <body>
+
+    <!-- Grain texture overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Floating ambient particles -->
+    <div class="particles-container" aria-hidden="true"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <a href="#home" class="skip-link">Doorgaan naar inhoud</a>
     <nav class="navbar" id="navbar">
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="nav-container">
             <a href="#home" class="logo">
-                <span class="logo-main">Skynn & Co.</span>
-                <span class="logo-sub">Clinic</span>
+                <img src="/logo/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo.png" alt="Skynn & Co. Clinic" class="logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -31,16 +117,10 @@
                     <ul class="dropdown-menu" data-dynamic-menu="treatments">
                         <li><a href="/tarieven#tab-popular">Populaire diensten</a></li>
                         <li><a href="/tarieven#tab-laser-hair-removal">Laserontharing</a></li>
+                        <li><a href="/tarieven#tab-fat-freeze">Fat Freeze</a></li>
+                        <li><a href="/tarieven#tab-hair-loss-treatment">Haarverlies behandeling</a></li>
                         <li><a href="/huidverbetering">Huidbehandelingen</a></li>
                         <li><a href="/tarieven#tab-teeth-whitening">Tanden bleken</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown nav-dropdown-pmu">
-                    <a href="/contact" class="dropdown-toggle" data-dynamic-link="pmu" aria-expanded="false">
-                        Permanente make-up <span class="nav-caret" aria-hidden="true">⌄</span>
-                    </a>
-                    <ul class="dropdown-menu" data-dynamic-menu="pmu">
-                        <li><a href="/contact">Op aanvraag</a></li>
                     </ul>
                 </li>
                 <li><a href="/tarieven">Tarieven</a></li>
@@ -55,9 +135,9 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1><em>Zichtbaar resultaat, met een <span class="gradient-text">warm welkom</span></em></h1>
+                <h1 class="text-reveal"><em>Zichtbaar resultaat, met een <span class="gradient-text">warm welkom</span></em></h1>
                 <p>Bij Skynn & Co. Clinic combineren we professionele huidzorg met een rustige, persoonlijke benadering. U voelt zich direct op uw gemak en ziet snel verschil.</p>
-                <p>Of u kiest voor laser, facial of permanente make-up: elke behandeling wordt afgestemd op uw huid, uw wensen en uw doel.</p>
+                <p>Van laserontharing en huidbehandelingen tot fat freeze en tanden bleken: elke behandeling wordt afgestemd op uw huid, uw wensen en uw doel.</p>
                 <div class="hero-actions">
                     <a href="https://www.fresha.com/a/skynn-co-clinic-apeldoorn-watermanstraat-98-fesz8mta/booking?menu=true&amp;offerItems=sv%3A20946692&amp;pId=1480228&amp;dppub=true&amp;utm_content=link_in_bio&amp;utm_medium=social&amp;utm_source=ig&amp;employeeId=3499647&amp;cartId=9ce8c067-8b47-4aea-92dc-3d15fb427db7" target="_blank" rel="noopener noreferrer" class="btn-service open-booking">Boek direct online</a>
                     <a href="/tarieven" class="btn-outline">Bekijk alle behandelingen</a>
@@ -73,7 +153,7 @@
                 </ul>
             </div>
             <div class="hero-image">
-                <div class="hero-image-arch">
+                <div class="hero-image-arch img-reveal">
                     <video class="lazy-video" autoplay muted loop playsinline preload="none" poster="/photos/IMG_5342.jpeg" aria-label="Skynn & Co. Clinic sfeer video">
                         <source data-src="/videos/clinic-1.mp4" type="video/mp4">
                     </video>
@@ -89,6 +169,62 @@
     <section class="tagline-section reveal">
         <div class="container">
             <p class="tagline-text"><em>Klanten kiezen ons voor de combinatie van topresultaten, persoonlijke aandacht en een fijne sfeer waarin u echt kunt ontspannen.</em></p>
+        </div>
+    </section>
+
+    <!-- Marquee strip -->
+    <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">Laserontharing</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Fat Freeze</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Hydra-Facial</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Carbon Laser Peel</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Microneedling</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Deep Cleansing</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Tanden Bleken</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Tattoo Verwijdering</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Meso Haartherapie</span>
+            <span class="marquee-dot"></span>
+            <span class="marquee-item">Cryolipolyse</span>
+            <span class="marquee-dot"></span>
+        </div>
+    </section>
+
+    <section class="stats-showcase">
+        <div class="container">
+            <div class="stats-grid reveal-stagger reveal">
+                <div class="stat-item">
+                    <div class="stat-number" data-scroll-count="5013" data-suffix="+">0</div>
+                    <div class="stat-label">Tevreden klanten</div>
+                    <div class="stat-detail">5-sterren beoordelingen</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-scroll-count="8" data-suffix="">0</div>
+                    <div class="stat-label">Jaar ervaring</div>
+                    <div class="stat-detail">Professionele huidzorg</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-scroll-count="15" data-suffix="+">0</div>
+                    <div class="stat-label">Behandelingen</div>
+                    <div class="stat-detail">Huid, laser & lichaam</div>
+                </div>
+                <div class="stat-divider" aria-hidden="true"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-scroll-count="100" data-prefix="" data-suffix="%">0</div>
+                    <div class="stat-label">Tevredenheid</div>
+                    <div class="stat-detail">Persoonlijke aandacht</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -114,23 +250,23 @@
 
     <section class="services-section" id="behandelingen">
         <div class="services-inner">
-            <h2 class="services-headline reveal">Van huidverbetering en laserontharing tot permanente make-up: alles voor een gezonde, stralende uitstraling</h2>
+            <h2 class="services-headline reveal">Van laserontharing en huidverbetering tot fat freeze: alles voor een gezonde, stralende uitstraling</h2>
             <div class="services-grid reveal-stagger reveal">
             <article class="service-card">
                 <div class="service-image">
                     <img src="/photos/IMG_1455.jpeg" alt="Gezichtsbehandelingen" loading="lazy" width="400" height="300">
                 </div>
                 <div class="service-content">
-                    <span class="service-label">ONTSPANNING</span>
-                    <h3>Gezichtsbehandelingen</h3>
-                    <p>Facials die direct zachtheid en glow geven, met producten en technieken die uw huidconditie zichtbaar verbeteren.</p>
-                    <a href="/tarieven" class="btn-service">Bekijk gezichtsbehandelingen</a>
+                    <span class="service-label">HUID</span>
+                    <h3>Huidbehandelingen</h3>
+                    <p>Van Hydra-Facial en Carbon Laser Peel tot Deep Cleansing en Microneedling: professionele huidbehandelingen met direct zichtbaar resultaat.</p>
+                    <a href="/huidverbetering" class="btn-service">Bekijk huidbehandelingen</a>
                 </div>
             </article>
 
             <article class="service-card">
                 <div class="service-image">
-                    <img src="/photos/IMG_4668.jpeg" alt="Intensieve huidbehandelingen" loading="lazy" width="400" height="300">
+                    <img src="/photos/skynnandco_photos_skynnandco_photo_29.jpg" alt="Serum huidverzorging" loading="lazy" width="400" height="300">
                 </div>
                 <div class="service-content">
                     <span class="service-label">HUIDVERBETERING</span>
@@ -142,32 +278,105 @@
 
             <article class="service-card">
                 <div class="service-image">
-                    <img src="/photos/IMG_2524.jpeg" alt="Permanente make-up" loading="lazy" width="400" height="300">
+                    <img src="/photos/insta_2.jpg" alt="Fat Freeze voor en na resultaat" loading="lazy" width="400" height="300">
                 </div>
                 <div class="service-content">
-                    <span class="service-label">ZELFVERTROUWEN</span>
-                    <h3>Permanente make-up</h3>
-                    <p>Natuurlijke microblading en infralash die uw gezicht subtiel versterken, met een verzorgde look elke dag.</p>
-                    <a href="/tarieven" class="btn-service">Bekijk permanente make-up</a>
+                    <span class="service-label">LICHAAM</span>
+                    <h3>Fat Freeze</h3>
+                    <p>Gerichte vetvermindering met cryolipolyse: een niet-invasieve behandeling voor buik, benen en kin met blijvend resultaat.</p>
+                    <a href="/tarieven#tab-fat-freeze" class="btn-service">Bekijk fat freeze</a>
                 </div>
             </article>
             </div>
         </div>
     </section>
 
+    <section class="results-showcase reveal" data-wave="top">
+        <div class="container">
+            <span class="section-label">Resultaten</span>
+            <h2 class="text-reveal"><em>Zichtbare resultaten bij onze klanten</em></h2>
+            <p>Echte behandelingen, echte resultaten. Bekijk wat onze klanten bereiken met professionele zorg op maat.</p>
+            <div class="results-scroll-wrapper">
+                <div class="results-scroll">
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/skynnandco_photos_skynnandco_photo_18.jpg" alt="Laserontharing gezicht resultaat" loading="lazy">
+                            <span class="result-card-badge">Laserontharing</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Laserontharing gezicht</h3>
+                            <p>Glad resultaat na enkele behandelingen met de nieuwste lasertechnologie.</p>
+                        </div>
+                    </article>
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/skynnandco_photos_skynnandco_photo_23.jpg" alt="Tanden bleken resultaat" loading="lazy">
+                            <span class="result-card-badge">Tanden bleken</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Tanden bleken</h3>
+                            <p>Stralend witte tanden in slechts één behandeling van 20 minuten.</p>
+                        </div>
+                    </article>
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/insta_2.jpg" alt="Fat Freeze resultaat" loading="lazy">
+                            <span class="result-card-badge">Fat Freeze</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Fat Freeze cryolipolyse</h3>
+                            <p>Gerichte vetvermindering met blijvend resultaat zonder ingreep.</p>
+                        </div>
+                    </article>
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/skynnandco_photos_skynnandco_photo_20.jpg" alt="Laserontharing oksels resultaat" loading="lazy">
+                            <span class="result-card-badge">Laserontharing</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Laserontharing oksels</h3>
+                            <p>Effectief en pijnarm: blijvend gladde huid met professionele laser.</p>
+                        </div>
+                    </article>
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/skynnandco_photos_skynnandco_photo_10.jpg" alt="Haarverlies behandeling resultaat" loading="lazy">
+                            <span class="result-card-badge">Haartherapie</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Meso haartherapie</h3>
+                            <p>Stimuleer haargroei met gerichte meso-behandelingen voor voller haar.</p>
+                        </div>
+                    </article>
+                    <article class="result-card">
+                        <div class="result-card-image">
+                            <img src="/photos/skynnandco_photos_skynnandco_photo_31.jpg" alt="Gezichtsbehandeling resultaat" loading="lazy">
+                            <span class="result-card-badge">Huidbehandeling</span>
+                        </div>
+                        <div class="result-card-body">
+                            <h3>Gezichtsbehandeling</h3>
+                            <p>Zichtbaar stralende, verzorgde huid na een professionele facial.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="about-preview" id="over-ons">
         <div class="container">
             <div class="about-preview-content">
                 <div class="about-images reveal reveal-left">
-                    <img src="/photos/IMG_5342.jpeg" alt="Salon sfeer" loading="lazy">
-                    <video class="lazy-video" autoplay muted loop playsinline preload="none" poster="/photos/IMG_1455.jpeg" aria-label="Behandeling video">
-                        <source data-src="/videos/clinic-2.mp4" type="video/mp4">
+                    <img src="/photos/skynnandco_photos_skynnandco_photo_35.jpg" alt="Skynn & Co. Clinic wachtruimte" loading="lazy">
+                    <video class="lazy-video" autoplay muted loop playsinline preload="none" poster="/photos/skynnandco_photos_skynnandco_photo_30.jpg" aria-label="Laserbehandeling video">
+                        <source data-src="/videos/skynnandco_videos_skynnandco_video_15.mp4" type="video/mp4">
                     </video>
-                    <img src="/photos/IMG_4668.jpeg" alt="Producten" loading="lazy">
+                    <img src="/photos/insta_1.jpg" alt="Laserbehandeling" loading="lazy">
                 </div>
                 <div class="about-text-block reveal reveal-right">
                     <span class="section-label">Over ons</span>
-                    <h2><em>Een kliniek waar u zich direct <span class="gradient-text">welkom</span> voelt</em></h2>
+                    <h2 class="text-reveal"><em>Een kliniek waar u zich direct <span class="gradient-text">welkom</span> voelt</em></h2>
                     <p>Onze klanten noemen vooral de warme ontvangst, de professionele aanpak en het zichtbare resultaat. Precies daar staan wij voor.</p>
                     <p>Wij werken niet met standaardbehandelingen, maar met advies en zorg op maat. Zo krijgt uw huid precies wat nodig is om te herstellen, te versterken en te stralen.</p>
                     <a href="/over-ons" class="btn-outline">Over ons</a>
@@ -176,15 +385,15 @@
         </div>
     </section>
 
-    <section class="pmu-section" id="permanente-makeup">
+    <section class="pmu-section" id="laserontharing">
         <div class="container">
-            <p class="section-quote reveal"><em>Subtiele permanente make-up die natuurlijk oogt en uw uitstraling versterkt, met precisie, rust en aandacht voor detail.</em></p>
+            <p class="section-quote reveal"><em>Professionele laserontharing met zichtbaar resultaat vanaf de eerste behandeling, veilig en geschikt voor elk huidtype.</em></p>
             <div class="pmu-content">
                 <div class="pmu-text reveal reveal-left">
-                    <p>Van intake tot nazorg begeleiden we u stap voor stap. Het doel is altijd hetzelfde: een resultaat dat bij u past en waar u elke dag blij van wordt.</p>
+                    <p>Met de nieuwste lasertechnologie bieden wij een pijnarme en effectieve oplossing voor ongewenste haargroei. Van gezicht tot full body: wij begeleiden u van intake tot nazorg.</p>
                 </div>
-                <div class="pmu-image reveal reveal-right">
-                    <img src="/photos/IMG_2524.jpeg" alt="Permanente make-up behandeling" loading="lazy">
+                <div class="pmu-image reveal reveal-right img-reveal" data-parallax="0.03">
+                    <img src="/photos/skynnandco_photos_skynnandco_photo_21.jpg" alt="Laserontharing bij Skynn & Co. Clinic" loading="lazy">
                 </div>
             </div>
         </div>
@@ -194,7 +403,7 @@
         <div class="container">
             <div class="reviews-head reveal">
                 <span class="section-label">Ervaringen</span>
-                <h2><em>Wat klanten zeggen</em></h2>
+                <h2 class="text-reveal"><em>Wat klanten zeggen</em></h2>
                 <p>Gebaseerd op recente 5-sterren ervaringen van klanten van Skynn & Co. Clinic.</p>
             </div>
             <div class="reviews-grid reveal-stagger reveal">
@@ -206,7 +415,7 @@
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     </div>
-                    <p class="review-quote">"My skin felt so smooth after my facial! I will definitely be back."</p>
+                    <p class="review-quote">"Mijn huid voelt zo zacht na de behandeling! Ik kom zeker terug."</p>
                     <p class="review-author">Scarlet Lopez</p>
                 </article>
                 <article class="review-card">
@@ -235,11 +444,57 @@
         </div>
     </section>
 
+    <section class="video-showcase reveal">
+        <div class="container">
+            <span class="section-label">Sfeer & behandelingen</span>
+            <h2 class="text-reveal"><em>Bekijk het zelf</em></h2>
+            <p>Een kijkje achter de schermen bij Skynn & Co. Clinic: onze behandelingen, sfeer en resultaten in beeld.</p>
+            <div class="video-reel">
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_21.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_5.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Laserontharing</span>
+                </div>
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_30.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_2.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Behandeling in actie</span>
+                </div>
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_7.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_7.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Kliniek sfeer</span>
+                </div>
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_6.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_3.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Zichtbaar resultaat</span>
+                </div>
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_12.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_15.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Professionele zorg</span>
+                </div>
+                <div class="video-reel-item">
+                    <video autoplay muted loop playsinline preload="metadata" poster="/photos/skynnandco_photos_skynnandco_photo_9.jpg">
+                        <source src="/videos/skynnandco_videos_skynnandco_video_10.mp4" type="video/mp4">
+                    </video>
+                    <span class="video-reel-label">Skynn & Co. Clinic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="home-signature">
         <div class="container home-signature-grid">
             <div class="home-signature-text reveal reveal-left">
                 <span class="section-label">Onze werkwijze</span>
-                <h2><em>Waarom klanten blijven terugkomen</em></h2>
+                <h2 class="text-reveal"><em>Waarom klanten blijven terugkomen</em></h2>
                 <p>Bij Skynn & Co. Clinic draait het niet alleen om een behandeling, maar om een complete ervaring: duidelijke uitleg, een rustige sfeer en zichtbare resultaten die passen bij uw huid.</p>
                 <div class="home-signature-list reveal-stagger reveal">
                     <div class="home-signature-item">
@@ -257,12 +512,61 @@
                 </div>
                 <a href="https://www.fresha.com/a/skynn-co-clinic-apeldoorn-watermanstraat-98-fesz8mta/booking?menu=true&amp;offerItems=sv%3A20946692&amp;pId=1480228&amp;dppub=true&amp;utm_content=link_in_bio&amp;utm_medium=social&amp;utm_source=ig&amp;employeeId=3499647&amp;cartId=9ce8c067-8b47-4aea-92dc-3d15fb427db7" target="_blank" rel="noopener noreferrer" class="btn-service open-booking">Plan uw afspraak</a>
             </div>
-            <div class="home-signature-media reveal reveal-right">
-                <img src="/photos/IMG_5342.jpeg" alt="Skynn & Co. Clinic sfeerbeeld" loading="lazy">
-                <img src="/photos/IMG_1455.jpeg" alt="Huidbehandeling bij Skynn & Co. Clinic" loading="lazy">
+            <div class="home-signature-media reveal reveal-right" data-parallax="0.04">
+                <img src="/photos/skynnandco_photos_skynnandco_photo_6.jpg" alt="Skynn & Co. Clinic behandelruimte" loading="lazy">
+                <img src="/photos/skynnandco_photos_skynnandco_photo_16.jpg" alt="Skynn & Co. Clinic visitekaartje" loading="lazy">
             </div>
         </div>
     </section>
+
+    <section class="faq-section" id="faq" data-wave="top">
+        <div class="container">
+            <span class="section-label reveal">Veelgestelde vragen</span>
+            <h2 class="reveal"><em>Alles wat u wilt weten</em></h2>
+            <div class="faq-grid reveal-stagger reveal">
+                <details class="faq-item">
+                    <summary>Doet laserontharing pijn?</summary>
+                    <p>De meeste klanten ervaren een licht tinteling of een warm gevoel. Onze nieuwste lasertechnologie heeft een ingebouwd koelsysteem waardoor de behandeling comfortabel is. Na de behandeling is de huid soms licht rood, maar dit verdwijnt binnen enkele uren.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hoeveel behandelingen heb ik nodig?</summary>
+                    <p>Dit verschilt per behandeling en persoon. Voor laserontharing adviseren we gemiddeld 6-8 sessies met 4-6 weken tussentijd. Bij een intakegesprek bespreken we uw persoonlijke behandelplan en verwachtingen.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is een gratis consult echt gratis?</summary>
+                    <p>Ja, bij Skynn & Co. Clinic is het eerste consult altijd vrijblijvend en kosteloos. We analyseren uw huid, bespreken uw wensen en adviseren de beste behandeling. Geen verplichtingen.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Wat is Fat Freeze en is het veilig?</summary>
+                    <p>Fat Freeze (cryolipolyse) is een niet-invasieve behandeling waarbij vetcellen worden bevroren en afgebroken door het lichaam. Het is een veilige, klinisch bewezen methode zonder operatie of hersteltijd.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kan ik direct online boeken?</summary>
+                    <p>Ja! Via onze website kunt u 24/7 online boeken via Fresha. Kies uw gewenste behandeling, datum en tijd. U ontvangt direct een bevestiging per e-mail.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Welke betaalmethoden accepteren jullie?</summary>
+                    <p>Wij accepteren pin, creditcard en contant. Betaling vindt plaats na de behandeling. Voor trajecten met meerdere sessies bieden we aantrekkelijke pakketprijzen.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Doet laserontharing pijn?", "acceptedAnswer": {"@type": "Answer", "text": "De meeste klanten ervaren een licht tinteling of een warm gevoel. Onze nieuwste lasertechnologie heeft een ingebouwd koelsysteem waardoor de behandeling comfortabel is."}},
+            {"@type": "Question", "name": "Hoeveel behandelingen heb ik nodig?", "acceptedAnswer": {"@type": "Answer", "text": "Dit verschilt per behandeling en persoon. Voor laserontharing adviseren we gemiddeld 6-8 sessies met 4-6 weken tussentijd."}},
+            {"@type": "Question", "name": "Is een gratis consult echt gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, bij Skynn & Co. Clinic is het eerste consult altijd vrijblijvend en kosteloos. We analyseren uw huid, bespreken uw wensen en adviseren de beste behandeling."}},
+            {"@type": "Question", "name": "Wat is Fat Freeze en is het veilig?", "acceptedAnswer": {"@type": "Answer", "text": "Fat Freeze (cryolipolyse) is een niet-invasieve behandeling waarbij vetcellen worden bevroren en afgebroken door het lichaam. Het is een veilige, klinisch bewezen methode."}},
+            {"@type": "Question", "name": "Kan ik direct online boeken?", "acceptedAnswer": {"@type": "Answer", "text": "Ja! Via onze website kunt u 24/7 online boeken via Fresha. Kies uw gewenste behandeling, datum en tijd."}},
+            {"@type": "Question", "name": "Welke betaalmethoden accepteren jullie?", "acceptedAnswer": {"@type": "Answer", "text": "Wij accepteren pin, creditcard en contant. Betaling vindt plaats na de behandeling."}}
+        ]
+    }
+    </script>
 
     <footer class="footer" id="contact">
         <div class="container">
@@ -313,9 +617,13 @@
 
     <a href="https://www.fresha.com/a/skynn-co-clinic-apeldoorn-watermanstraat-98-fesz8mta/booking?menu=true&amp;offerItems=sv%3A20946692&amp;pId=1480228&amp;dppub=true&amp;utm_content=link_in_bio&amp;utm_medium=social&amp;utm_source=ig&amp;employeeId=3499647&amp;cartId=9ce8c067-8b47-4aea-92dc-3d15fb427db7" target="_blank" rel="noopener noreferrer" class="floating-cta open-booking"><span class="floating-cta-logo">S<span>tw</span></span><span class="floating-cta-divider"></span><span class="floating-cta-text">Maak afspraak</span></a>
 
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
     <script src="/supabase-config.js" defer></script>
     <script src="/script.js" defer></script>
-    <script src="/modern-enhancements.js" defer></script>
+    <script src="/modern-enhancements.js?v=2" defer></script>
+    <script src="/premium-effects.js?v=2" defer></script>
+    <script src="/ultra-effects.js?v=3" defer></script>
+    <script src="/world-class.js?v=6" defer></script>
 </body>
 </html>

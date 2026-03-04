@@ -226,17 +226,36 @@
         videos.forEach(function (v) { observer.observe(v); });
     }
 
+    // ===== HORIZONTAL SCROLL FADE EDGE =====
+    function initScrollFades() {
+        var wrappers = document.querySelectorAll('.results-scroll-wrapper');
+        wrappers.forEach(function (wrapper) {
+            var scroll = wrapper.querySelector('.results-scroll');
+            if (!scroll) return;
+
+            scroll.addEventListener('scroll', function () {
+                if (scroll.scrollLeft > 10) {
+                    wrapper.classList.add('scrolled-start');
+                } else {
+                    wrapper.classList.remove('scrolled-start');
+                }
+            }, { passive: true });
+        });
+    }
+
     // ===== INIT ALL =====
     function init() {
         initLazyVideos();
         initScrollReveal();
         initCounterAnimation();
         initFloatingCTA();
+
         initLazyImages();
         initScrollIndicator();
         initHeroParallax();
         initCardGlow();
         initNavbarSmooth();
+        initScrollFades();
     }
 
     if (document.readyState === 'loading') {

@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Admin | Skynn & Co. Clinic</title>
     <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#b54f3f">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css?v=9">
 </head>
-<body>
+<body class="page-admin">
     <nav class="navbar" id="navbar">
         <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
         <div class="nav-container">
             <a href="/" class="logo">
-                <span class="logo-main">Skynn & Co.</span>
-                <span class="logo-sub">Clinic</span>
+                <img src="/logo/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo.png" alt="Skynn & Co. Clinic" class="logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -29,16 +30,10 @@
                     <ul class="dropdown-menu" data-dynamic-menu="treatments">
                         <li><a href="/tarieven#tab-popular">Populaire diensten</a></li>
                         <li><a href="/tarieven#tab-laser-hair-removal">Laserontharing</a></li>
+                        <li><a href="/tarieven#tab-fat-freeze">Fat Freeze</a></li>
+                        <li><a href="/tarieven#tab-hair-loss-treatment">Haarverlies behandeling</a></li>
                         <li><a href="/huidverbetering">Huidbehandelingen</a></li>
                         <li><a href="/tarieven#tab-teeth-whitening">Tanden bleken</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown nav-dropdown-pmu">
-                    <a href="/contact" class="dropdown-toggle" data-dynamic-link="pmu" aria-expanded="false">
-                        Permanente make-up <span class="nav-caret" aria-hidden="true">⌄</span>
-                    </a>
-                    <ul class="dropdown-menu" data-dynamic-menu="pmu">
-                        <li><a href="/contact">Op aanvraag</a></li>
                     </ul>
                 </li>
                 <li><a href="/tarieven">Tarieven</a></li>
@@ -52,140 +47,351 @@
 
     <main class="admin-page" id="adminApp">
         <div class="container">
+            <!-- Login -->
             <div class="admin-login" id="adminLoginView">
-                <h1><em>Admin panel</em></h1>
-                <p>Beheer hier de boekingsdata van de site.</p>
+                <div class="admin-login-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                </div>
+                <h1><em>Admin Panel</em></h1>
+                <p>Beheer diensten, foto's en instellingen van uw website.</p>
                 <label>
                     Pincode
-                    <input id="adminPinInput" type="password" inputmode="numeric" placeholder="Voer pincode in">
+                    <input id="adminPinInput" type="password" inputmode="numeric" placeholder="Voer pincode in" autocomplete="off">
                 </label>
                 <button id="adminLoginBtn" type="button" class="btn-nav">Inloggen</button>
                 <p class="admin-help">Standaard pincode: <code>1234</code></p>
             </div>
 
+            <!-- Dashboard -->
             <section class="admin-panel" id="adminPanelView" style="display:none;">
+                <!-- Header -->
                 <header class="admin-header">
-                    <h2>Dashboard</h2>
+                    <div class="admin-header-left">
+                        <h2>Dashboard</h2>
+                        <span class="admin-header-sub">Skynn & Co. Clinic beheer</span>
+                    </div>
                     <div class="admin-header-actions">
-                        <button id="adminSaveBtn" type="button" class="btn-nav">Alles opslaan</button>
-                        <button id="adminResetBtn" type="button" class="admin-ghost-btn">Reset standaard</button>
-                        <button id="adminLogoutBtn" type="button" class="admin-ghost-btn">Uitloggen</button>
+                        <button id="adminSaveBtn" type="button" class="admin-btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17,21 17,13 7,13 7,21"/><polyline points="7,3 7,8 15,8"/></svg>
+                            Opslaan
+                        </button>
+                        <button id="adminResetBtn" type="button" class="admin-ghost-btn">Reset</button>
+                        <button id="adminLogoutBtn" type="button" class="admin-ghost-btn admin-ghost-btn-danger">Uitloggen</button>
                     </div>
                 </header>
 
+                <!-- Metrics -->
                 <div class="admin-metrics">
-                    <article><h3>Categorieen</h3><p id="adminCountCategories">0</p></article>
-                    <article><h3>Diensten</h3><p id="adminCountServices">0</p></article>
-                    <article><h3>Laatst bijgewerkt</h3><p id="adminLastUpdated">-</p></article>
+                    <article>
+                        <div class="admin-metric-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                        </div>
+                        <h3>Categorieën</h3>
+                        <p id="adminCountCategories">0</p>
+                    </article>
+                    <article>
+                        <div class="admin-metric-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </div>
+                        <h3>Diensten</h3>
+                        <p id="adminCountServices">0</p>
+                    </article>
+                    <article>
+                        <div class="admin-metric-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                        </div>
+                        <h3>Laatst bijgewerkt</h3>
+                        <p id="adminLastUpdated">-</p>
+                    </article>
                 </div>
 
-                <section class="admin-card admin-guide-card">
-                    <h3>Hoe werkt dit?</h3>
-                    <div class="admin-guide-grid">
-                        <article><strong>1. Categorieen</strong><p>Dit zijn de tabs in je boekingspopup, zoals “Populaire diensten”.</p></article>
-                        <article><strong>2. Diensten</strong><p>Hier voeg je behandelingen toe of wijzig je prijzen en duur.</p></article>
-                        <article><strong>3. Beschikbaarheid</strong><p>Stel per dag in wanneer je werkt. Deze tijden sturen direct zowel het boekingsscherm als de openingstijden op de site aan.</p></article>
-                        <article><strong>4. Opslaan</strong><p>Klik op “Alles opslaan” om alles op de website te updaten.</p></article>
-                    </div>
-                </section>
+                <!-- Tab navigation -->
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-admin-tab="guide">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Uitleg
+                    </button>
+                    <button class="admin-tab" data-admin-tab="categories">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                        Categorieën
+                    </button>
+                    <button class="admin-tab" data-admin-tab="services">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+                        Diensten
+                    </button>
+                    <button class="admin-tab" data-admin-tab="photos">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg>
+                        Foto's
+                    </button>
+                    <button class="admin-tab" data-admin-tab="availability">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Beschikbaarheid
+                    </button>
+                    <button class="admin-tab" data-admin-tab="settings">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        Instellingen
+                    </button>
+                </div>
 
-                <section class="admin-card">
-                    <h3>Categorieen</h3>
-                    <div class="admin-grid two">
-                        <input id="adminCategoryId" type="text" placeholder="categorie-id (bijv. popular)">
-                        <input id="adminCategoryLabel" type="text" placeholder="Label (bijv. Populaire diensten)">
-                    </div>
-                    <button id="adminAddCategoryBtn" type="button" class="admin-ghost-btn">Categorie toevoegen</button>
-                    <div class="admin-table-wrap">
-                        <table class="admin-table">
-                            <thead>
-                                <tr><th>ID</th><th>Label</th><th>Acties</th></tr>
-                            </thead>
-                            <tbody id="adminCategoriesBody"></tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <section class="admin-card">
-                    <h3>Diensten</h3>
-                    <div class="admin-grid three">
-                        <input id="adminServiceId" type="text" placeholder="dienst-id (optioneel)">
-                        <select id="adminServiceCategory"></select>
-                        <input id="adminServiceSection" type="text" placeholder="Sectie titel">
-                    </div>
-                    <div class="admin-grid two">
-                        <input id="adminServiceName" type="text" placeholder="Naam dienst">
-                        <input id="adminServiceDuration" type="text" placeholder="Duur (bijv. 60 minuten)">
-                    </div>
-                    <div class="admin-grid two">
-                        <input id="adminServicePrice" type="text" placeholder="Prijs (bijv. € 66,00)">
-                        <div class="admin-inline-actions">
-                            <button id="adminAddServiceBtn" type="button" class="admin-ghost-btn">Dienst toevoegen</button>
-                            <button id="adminCancelEditServiceBtn" type="button" class="admin-ghost-btn" style="display:none;">Annuleer</button>
+                <!-- Tab: Uitleg -->
+                <div class="admin-tab-content active" id="adminTabGuide">
+                    <section class="admin-card admin-guide-card">
+                        <h3>Hoe werkt het admin panel?</h3>
+                        <div class="admin-guide-grid">
+                            <article>
+                                <div class="admin-guide-num">1</div>
+                                <strong>Categorieën</strong>
+                                <p>Dit zijn de tabs op de tarieven pagina, zoals "Populaire diensten" of "Fat Freeze".</p>
+                            </article>
+                            <article>
+                                <div class="admin-guide-num">2</div>
+                                <strong>Diensten</strong>
+                                <p>Voeg behandelingen toe of wijzig prijzen, duur en beschrijvingen per categorie.</p>
+                            </article>
+                            <article>
+                                <div class="admin-guide-num">3</div>
+                                <strong>Foto's</strong>
+                                <p>Beheer de foto's en video's die op de website worden getoond per pagina.</p>
+                            </article>
+                            <article>
+                                <div class="admin-guide-num">4</div>
+                                <strong>Opslaan</strong>
+                                <p>Klik op "Opslaan" om alle wijzigingen direct op de website door te voeren.</p>
+                            </article>
                         </div>
-                    </div>
-                    <div class="admin-table-wrap">
-                        <table class="admin-table">
-                            <thead>
-                                <tr><th>ID</th><th>Categorie</th><th>Naam</th><th>Duur</th><th>Prijs</th><th>Acties</th></tr>
-                            </thead>
-                            <tbody id="adminServicesBody"></tbody>
-                        </table>
-                    </div>
-                </section>
+                    </section>
+                </div>
 
-                <section class="admin-card">
-                    <h3>Boekingsinstellingen</h3>
-                    <div class="admin-grid two">
-                        <input id="adminStaffName" type="text" placeholder="Medewerker naam">
-                        <input id="adminStaffStatus" type="text" placeholder="Status (bijv. komende 14 dagen niet beschikbaar)">
-                    </div>
-                    <div class="admin-grid one">
-                        <input id="adminFirstAvailability" type="text" placeholder="Eerste mogelijkheid tekst">
-                    </div>
-                </section>
+                <!-- Tab: Categorieën -->
+                <div class="admin-tab-content" id="adminTabCategories">
+                    <section class="admin-card">
+                        <h3>Categorieën beheren</h3>
+                        <div class="admin-grid two">
+                            <input id="adminCategoryId" type="text" placeholder="categorie-id (bijv. popular)">
+                            <input id="adminCategoryLabel" type="text" placeholder="Label (bijv. Populaire diensten)">
+                        </div>
+                        <button id="adminAddCategoryBtn" type="button" class="admin-ghost-btn">+ Categorie toevoegen</button>
+                        <div class="admin-table-wrap">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr><th>ID</th><th>Label</th><th>Acties</th></tr>
+                                </thead>
+                                <tbody id="adminCategoriesBody"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
 
-                <section class="admin-card">
-                    <h3>Beschikbaarheid (vrije tijden)</h3>
-                    <div class="admin-grid three">
-                        <label class="admin-field">
-                            <span>Interval (minuten)</span>
-                            <input id="adminSlotInterval" type="number" min="5" max="180" step="5" value="30">
-                        </label>
-                    </div>
-                    <div class="admin-availability-grid">
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay0Enabled"><span>Zondag</span><input type="time" id="adminDay0Start"><input type="time" id="adminDay0End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay1Enabled"><span>Maandag</span><input type="time" id="adminDay1Start"><input type="time" id="adminDay1End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay2Enabled"><span>Dinsdag</span><input type="time" id="adminDay2Start"><input type="time" id="adminDay2End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay3Enabled"><span>Woensdag</span><input type="time" id="adminDay3Start"><input type="time" id="adminDay3End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay4Enabled"><span>Donderdag</span><input type="time" id="adminDay4Start"><input type="time" id="adminDay4End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay5Enabled"><span>Vrijdag</span><input type="time" id="adminDay5Start"><input type="time" id="adminDay5End"></label>
-                        <label class="admin-availability-row"><input type="checkbox" id="adminDay6Enabled"><span>Zaterdag</span><input type="time" id="adminDay6Start"><input type="time" id="adminDay6End"></label>
-                    </div>
-                    <div class="admin-grid one">
-                        <label class="admin-field">
-                            <span>Geblokkeerde datums (YYYY-MM-DD, 1 per regel)</span>
-                            <textarea id="adminBlockedDates" rows="4" placeholder="2026-02-18&#10;2026-02-21"></textarea>
-                        </label>
-                    </div>
-                </section>
+                <!-- Tab: Diensten -->
+                <div class="admin-tab-content" id="adminTabServices">
+                    <section class="admin-card">
+                        <h3>Diensten beheren</h3>
+                        <div class="admin-grid three">
+                            <input id="adminServiceId" type="text" placeholder="dienst-id (optioneel)">
+                            <select id="adminServiceCategory"></select>
+                            <input id="adminServiceSection" type="text" placeholder="Sectie titel">
+                        </div>
+                        <div class="admin-grid two">
+                            <input id="adminServiceName" type="text" placeholder="Naam dienst">
+                            <input id="adminServiceDuration" type="text" placeholder="Duur (bijv. 60 minuten)">
+                        </div>
+                        <div class="admin-grid two">
+                            <input id="adminServicePrice" type="text" placeholder="Prijs (bijv. € 66,00)">
+                            <div class="admin-inline-actions">
+                                <button id="adminAddServiceBtn" type="button" class="admin-ghost-btn">+ Dienst toevoegen</button>
+                                <button id="adminCancelEditServiceBtn" type="button" class="admin-ghost-btn" style="display:none;">Annuleer</button>
+                            </div>
+                        </div>
+                        <div class="admin-table-wrap">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr><th>ID</th><th>Categorie</th><th>Naam</th><th>Duur</th><th>Prijs</th><th>Acties</th></tr>
+                                </thead>
+                                <tbody id="adminServicesBody"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
 
-                <section class="admin-card">
-                    <h3>Import / export</h3>
-                    <div class="admin-inline-actions">
-                        <button id="adminExportBtn" type="button" class="admin-ghost-btn">Export JSON</button>
-                        <button id="adminImportBtn" type="button" class="admin-ghost-btn">Import JSON</button>
-                    </div>
-                    <textarea id="adminJsonArea" rows="12" placeholder="Plak hier JSON voor import of klik export."></textarea>
-                </section>
+                <!-- Tab: Foto's -->
+                <div class="admin-tab-content" id="adminTabPhotos">
+                    <section class="admin-card">
+                        <h3>Foto's & media beheren</h3>
+                        <p class="admin-card-desc">Upload nieuwe foto's of vervang bestaande afbeeldingen op de website. Klik op een foto om deze te vervangen.</p>
+
+                        <div class="admin-photo-sections">
+                            <div class="admin-photo-section">
+                                <h4>Homepage</h4>
+                                <div class="admin-photo-grid" id="adminPhotosHome">
+                                    <div class="admin-photo-item" data-page="index" data-target="hero-video">
+                                        <img src="/photos/IMG_5342.jpeg" alt="Hero video poster">
+                                        <span class="admin-photo-label">Hero video</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="index" data-target="service-1">
+                                        <img src="/photos/IMG_1455.jpeg" alt="Service card 1">
+                                        <span class="admin-photo-label">Huidbehandelingen</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="index" data-target="service-2">
+                                        <img src="/photos/IMG_4668.jpeg" alt="Service card 2">
+                                        <span class="admin-photo-label">Intensieve behandelingen</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="index" data-target="service-3">
+                                        <img src="/photos/IMG_2524.jpeg" alt="Service card 3">
+                                        <span class="admin-photo-label">Fat Freeze</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="admin-photo-section">
+                                <h4>Over ons</h4>
+                                <div class="admin-photo-grid" id="adminPhotosAbout">
+                                    <div class="admin-photo-item" data-page="over-ons" data-target="story">
+                                        <img src="/photos/IMG_2524.jpeg" alt="About story">
+                                        <span class="admin-photo-label">Verhaal afbeelding</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="admin-photo-section">
+                                <h4>Impressie</h4>
+                                <div class="admin-photo-grid" id="adminPhotosGallery">
+                                    <div class="admin-photo-item" data-page="impressie" data-target="gallery-1">
+                                        <img src="/photos/IMG_1455.jpeg" alt="Gallery 1">
+                                        <span class="admin-photo-label">Galerij foto 1</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="impressie" data-target="gallery-2">
+                                        <img src="/photos/IMG_4668.jpeg" alt="Gallery 2">
+                                        <span class="admin-photo-label">Galerij foto 2</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="impressie" data-target="gallery-3">
+                                        <img src="/photos/IMG_2524.jpeg" alt="Gallery 3">
+                                        <span class="admin-photo-label">Galerij foto 3</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                    <div class="admin-photo-item" data-page="impressie" data-target="gallery-4">
+                                        <img src="/photos/IMG_5342.jpeg" alt="Gallery 4">
+                                        <span class="admin-photo-label">Galerij foto 4</span>
+                                        <button class="admin-photo-change" type="button">Wijzig</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="file" id="adminPhotoUpload" accept="image/*,video/*" style="display:none;">
+                    </section>
+                </div>
+
+                <!-- Tab: Beschikbaarheid -->
+                <div class="admin-tab-content" id="adminTabAvailability">
+                    <section class="admin-card">
+                        <h3>Beschikbaarheid & openingstijden</h3>
+                        <p class="admin-card-desc">Stel per dag in wanneer de kliniek geopend is. Deze tijden worden direct op de website getoond.</p>
+                        <div class="admin-grid three">
+                            <label class="admin-field">
+                                <span>Interval (minuten)</span>
+                                <input id="adminSlotInterval" type="number" min="5" max="180" step="5" value="30">
+                            </label>
+                        </div>
+                        <div class="admin-availability-grid">
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay0Enabled"><span>Zondag</span><input type="time" id="adminDay0Start"><input type="time" id="adminDay0End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay1Enabled"><span>Maandag</span><input type="time" id="adminDay1Start"><input type="time" id="adminDay1End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay2Enabled"><span>Dinsdag</span><input type="time" id="adminDay2Start"><input type="time" id="adminDay2End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay3Enabled"><span>Woensdag</span><input type="time" id="adminDay3Start"><input type="time" id="adminDay3End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay4Enabled"><span>Donderdag</span><input type="time" id="adminDay4Start"><input type="time" id="adminDay4End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay5Enabled"><span>Vrijdag</span><input type="time" id="adminDay5Start"><input type="time" id="adminDay5End"></label>
+                            <label class="admin-availability-row"><input type="checkbox" id="adminDay6Enabled"><span>Zaterdag</span><input type="time" id="adminDay6Start"><input type="time" id="adminDay6End"></label>
+                        </div>
+                        <div class="admin-grid one">
+                            <label class="admin-field">
+                                <span>Geblokkeerde datums (YYYY-MM-DD, 1 per regel)</span>
+                                <textarea id="adminBlockedDates" rows="4" placeholder="2026-02-18&#10;2026-02-21"></textarea>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Tab: Instellingen -->
+                <div class="admin-tab-content" id="adminTabSettings">
+                    <section class="admin-card">
+                        <h3>Boekingsinstellingen</h3>
+                        <div class="admin-grid two">
+                            <input id="adminStaffName" type="text" placeholder="Medewerker naam">
+                            <input id="adminStaffStatus" type="text" placeholder="Status (bijv. komende 14 dagen niet beschikbaar)">
+                        </div>
+                        <div class="admin-grid one">
+                            <input id="adminFirstAvailability" type="text" placeholder="Eerste mogelijkheid tekst">
+                        </div>
+                    </section>
+
+                    <section class="admin-card">
+                        <h3>Import / Export</h3>
+                        <p class="admin-card-desc">Exporteer alle data als JSON backup of importeer een eerder opgeslagen bestand.</p>
+                        <div class="admin-inline-actions">
+                            <button id="adminExportBtn" type="button" class="admin-ghost-btn">Export JSON</button>
+                            <button id="adminImportBtn" type="button" class="admin-ghost-btn">Import JSON</button>
+                        </div>
+                        <textarea id="adminJsonArea" rows="8" placeholder="Plak hier JSON voor import of klik export."></textarea>
+                    </section>
+                </div>
 
                 <p id="adminStatus" class="admin-status">Klaar.</p>
             </section>
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="/supabase-config.js"></script>
-    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="/supabase-config.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script>
+    // Admin tab switching
+    document.addEventListener('DOMContentLoaded', function() {
+        var tabs = document.querySelectorAll('.admin-tab');
+        var contents = document.querySelectorAll('.admin-tab-content');
+
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var target = this.getAttribute('data-admin-tab');
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                contents.forEach(function(c) { c.classList.remove('active'); });
+                this.classList.add('active');
+                var targetEl = document.getElementById('adminTab' + target.charAt(0).toUpperCase() + target.slice(1));
+                if (targetEl) targetEl.classList.add('active');
+            });
+        });
+
+        // Photo upload handling
+        var currentPhotoItem = null;
+        var photoUpload = document.getElementById('adminPhotoUpload');
+
+        document.querySelectorAll('.admin-photo-change').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                currentPhotoItem = this.closest('.admin-photo-item');
+                photoUpload.click();
+            });
+        });
+
+        if (photoUpload) {
+            photoUpload.addEventListener('change', function(e) {
+                if (!e.target.files.length || !currentPhotoItem) return;
+                var file = e.target.files[0];
+                var reader = new FileReader();
+                reader.onload = function(ev) {
+                    var img = currentPhotoItem.querySelector('img');
+                    if (img) img.src = ev.target.result;
+                    currentPhotoItem.classList.add('admin-photo-changed');
+                };
+                reader.readAsDataURL(file);
+                e.target.value = '';
+            });
+        }
+    });
+    </script>
 </body>
 </html>
